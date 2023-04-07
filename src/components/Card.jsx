@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Card(props) {
     return (
-        <div className="card">
+        <div className={`card ${props.last? "card--last" : ""}`}>
             <img className="card--image" src={props.item.imageUrl} alt="" />
             <div className="card--text">
                 <div className="card--location">
